@@ -1,0 +1,89 @@
+{
+  "Hero": {
+    "heroTitle": "Welcome to Our Restaurant",
+    "heroDec": "The most delicious food and drinks prepared by expert chefs",
+    "herobtn": "Browse Menu"
+  },
+  "header": "Flower Terrace",
+  "menu": "Menu",
+  "about": "About",
+  "contact": "Contact",
+  "languageToggle": "العربية",
+  "detailsbtn": "Details",
+  "priceLabel": "Price",
+  "currency": "SAR",
+  "FilterBar": {
+    "all": "All",
+    "meals": "Meals",
+    "drinks": "Drinks",
+    "appetizers": "Appetizers",
+    "desserts": "Desserts",
+    "searchPlaceholder": "Search for a meal..."
+  },
+  "About": {
+    "title": "About Our Restaurant",
+    "description": "We serve the most delicious traditional Arabic cuisine using the latest methods and finest ingredients. Our experience extends over 20 years in authentic Arabic cooking."
+  },
+
+  "Footer": {
+    "copyright": "All rights reserved © 2024 Flower Terrace",
+    "hours": "Working Hours: 24/7"
+  },
+  "EmptyState": {
+    "alt": "Hands icon indicating no search results",
+    "title": "We couldn't find what you're looking for",
+    "description": "Try different keywords or browse another category"
+  },
+  "Pagination": {
+    "showing": "Showing",
+    "of": "of",
+    "items": "items",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "QRModal": {
+    "title": "QR Code",
+    "qrAlt": "QR Code for restaurant",
+    "description": "Scan this QR code to rate our restaurant"
+  },
+  "Rating": {
+    "title": "Rate Your Experience",
+    "subtitle": "We value your opinion and always strive to improve our services",
+    "yourRating": "Your Rating:",
+    "yourName": "Your Name:",
+    "yourMessage": "Your Message (optional):",
+    "namePlaceholder": "Enter your name",
+    "messagePlaceholder": "Share your opinion or suggestions...",
+    "submit": "Submit Rating",
+    "submitting": "Submitting...",
+    "success": "Thank you! Your rating has been submitted successfully",
+    "error": "An error occurred while submitting your rating",
+    "ratingRequired": "Please select a rating",
+    "nameRequired": "Please enter your name",
+    "stars": "stars"
+  },
+  "Feedback": {
+    "title": "Customer Satisfaction Survey",
+    "subtitle": "Share your opinion to improve your experience",
+    "customerInfo": "Your Information",
+    "yourName": "Name",
+    "namePlaceholder": "Enter your name",
+    "phoneNumber": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email (optional)",
+    "notes": "Notes",
+    "notesPlaceholder": "Share any additional notes or suggestions...",
+    "optional": "optional",
+    "submit": "Submit Survey",
+    "submitting": "Submitting...",
+    "success": "Thank you! Your survey has been submitted successfully",
+    "error": "An error occurred while submitting your survey",
+    "allQuestionsRequired": "Please rate all questions",
+    "nameRequired": "Please enter your name",
+    "phoneRequired": "Please enter your phone number",
+    "stars": "stars",
+    "footer": "© 2025 Branch Rating System. All rights reserved.",
+    "footerNote": "This system was developed to improve service quality"
+  }
+}
