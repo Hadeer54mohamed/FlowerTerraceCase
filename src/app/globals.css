@@ -143,7 +143,7 @@ label,
   background-position: center center;
   overflow: hidden;
   position: relative;
-  z-index: 10;
+  z-index: 50;
 }
 
 .logo-img {
@@ -2393,8 +2393,7 @@ button:hover,
   }
 }
 
-.flower-choice-button {
-  /* يتوافق مع ألوان الموقع: أخضر + ذهبي من الفلاتر/الأزرار + أبيض */
+/* .flower-choice-button {
   --btn-accent: #e6a555;
   --btn-face: var(--primary-color);
   --btn-ring-dark: var(--accent-color);
@@ -2599,7 +2598,8 @@ button:hover,
     min-width: 168px;
     padding: 1rem 1.75rem;
   }
-}
+} */
+
 
 @keyframes star-rotate {
   from {
@@ -2807,5 +2807,151 @@ button:hover,
     font-size: 1rem !important;
     padding: 0.9rem !important;
     border-radius: 12px !important;
+  }
+}
+
+/* Buttons main */
+.buttons-main {
+  padding-top: 110px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 384px;
+}
+
+@media (min-width: 768px) {
+  .buttons-main {
+    padding-top: 0;
+  }
+
+  .buttons-container {
+    flex-direction: row;
+    gap: 48px;
+    max-width: none;
+  }
+}
+
+/* Luxury Buttons */
+.luxury-btn {
+  position: relative;
+  margin-bottom : 30px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  padding: 32px 48px;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e8dcc8;
+  text-decoration: none;
+  background: rgba(0, 20, 10, 0.6);
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.luxury-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/images/btn/p4.png") center / 100% 100% no-repeat;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.4s ease;
+}
+
+.luxury-btn-icon {
+  position: relative;
+  z-index: 3;
+  font-size: 2.2rem;
+  line-height: 1;
+  animation: iconFloat 2.5s ease-in-out infinite;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+}
+
+.luxury-btn-text {
+  position: relative;
+  z-index: 3;
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.luxury-btn:hover .luxury-btn-icon {
+  animation: iconBounce 0.5s ease infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.15);
+  }
+}
+
+.luxury-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  color: #fff;
+  background: rgba(0, 30, 15, 0.7);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 24px rgba(0, 80, 40, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.luxury-btn:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.4),
+    inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .luxury-btn {
+    min-width: 150px;
+    padding: 26px 34px;
+    font-size: 1.05rem;
+    border-radius: 14px;
+  }
+  .luxury-btn-icon {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .luxury-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 22px 26px;
+    font-size: 0.95rem;
+    border-radius: 12px;
+  }
+  .luxury-btn-icon {
+    font-size: 2.2rem;
   }
 }
