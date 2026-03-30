@@ -8,29 +8,23 @@ export default function HomePage() {
   return (
     <div className="min-h-screen d-flex flex-column">
       <Header />
-      <main className="flex-grow-1 flex items-center justify-center px-3 w-full">
-        <div className="flex  gap-5">
-          <a
+      <main className="flex-grow-1 flex items-center justify-center px-4 w-full buttons-main">
+        <div className="buttons-container">
+      <a
             href={`https://flowercafe.app.ensmenu.com/${locale}`}
             rel="noopener noreferrer"
-            className="flower-choice-button"
+            className="luxury-btn"
           >
-            <div>
-              <div>
-                <div>{locale === "ar" ? "كافيه" : "Cafe"}</div>
-              </div>
-            </div>
+            <span className="luxury-btn-icon">☕</span>
+            <span className="luxury-btn-text">{locale === "ar" ? "منيو كافيه" : "Cafe Menu"}</span>
           </a>
           <a
             href={`https://flower-food.app.ensmenu.com/${locale}`}
             rel="noopener noreferrer"
-            className="flower-choice-button"
+            className="luxury-btn"
           >
-            <div>
-              <div>
-                <div>{locale === "ar" ? "مطعم" : "Restaurant"}</div>
-              </div>
-            </div>
+            <span className="luxury-btn-icon">🍝</span>
+            <span className="luxury-btn-text">{locale === "ar" ? "منيو مطعم" : "Restaurant Menu"}</span>
           </a>
         </div>
       </main>
