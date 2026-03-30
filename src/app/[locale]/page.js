@@ -12,7 +12,6 @@ export default function HomePage() {
         <div className="flex  gap-5">
           <a
             href={`https://flowercafe.app.ensmenu.com/${locale}`}
-            target="_blank"
             rel="noopener noreferrer"
             className="flower-choice-button"
           >
@@ -24,7 +23,6 @@ export default function HomePage() {
           </a>
           <a
             href={`https://flower-food.app.ensmenu.com/${locale}`}
-            target="_blank"
             rel="noopener noreferrer"
             className="flower-choice-button"
           >
